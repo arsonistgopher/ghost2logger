@@ -1,0 +1,13 @@
+[Unit]
+Description=Scratch 1 Service Test
+Documentation=http://TODO
+
+[Service]
+Type=simple
+ExecStart=/opt/linux_scratch1
+StandardOutput=null
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+Alias=scratch1.service
